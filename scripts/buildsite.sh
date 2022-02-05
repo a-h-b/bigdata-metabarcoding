@@ -34,7 +34,7 @@ EOF
 # Adds .nojekyll file to the root to signal to GitHub that
 # directories that start with an underscore (_) can remain
 touch docs/.nojekyll
-#touch .nojekyll
+touch .nojekyll
 
 # add .gitignore
 cat > .gitignore <<EOF
@@ -42,6 +42,8 @@ cat > .gitignore <<EOF
 !README.md
 !make.bat
 !Makefile
+!.nojekyll
+!.gitignore
 !/scripts/
 !/scripts/**
 !/docs/
@@ -58,7 +60,7 @@ git init
 git add .
 git commit -m "Initialize"
 git branch -M main
-git remote add origin https://github.com/ejongepier/${reponame}.github.io.git
+git remote add origin https://github.com/ejongepier/${reponame}.git
 git push -u origin main
 
 # go to github repo settings and select under Github Pages source: main /docs

@@ -1,0 +1,12 @@
+*
+!README.md
+!make.bat
+!Makefile
+!.nojekyll
+!.gitignore
+!/scripts/
+!/scripts/**
+!/docs/
+!/docs/**
+!/source/
+!/source/**

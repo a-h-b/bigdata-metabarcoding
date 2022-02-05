@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodiversity &mdash; Microbiome Tutorial 2022.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Community composition" href="composition.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Microbiome Tutorial
+          </a>
+              <div class="version">
+                0.3.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-processing.html">Data filtering and normalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="composition.html">Community composition</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Biodiversity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#alpha-diversity-analysis"><span class="math notranslate nohighlight">\(\alpha\)</span>-diversity analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beta-diversity-analysis"><span class="math notranslate nohighlight">\(\beta\)</span>-diversity analysis</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Microbiome Tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Biodiversity</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="biodiversity">
+<h1>Biodiversity<a class="headerlink" href="#biodiversity" title="Permalink to this headline">¶</a></h1>
+<p>When analyzing metabarcoding data we are typically interested in the diversity within samples as well as the diversity between samples.</p>
+<div class="figure align-default" id="id1">
+<img alt="_images/MA-tree.png" src="_images/MA-tree.png" />
+<p class="caption"><span class="caption-text">Analyses methods you can choose from in MicrobiomeAnalyst.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-question-17 admonition">
+<p class="admonition-title">Question 17.</p>
+<div class="line-block">
+<div class="line">Based on what you learned in the lecture, discuss which method is appropriate to analyze the diversity within samples.</div>
+<div class="line">And which one to compare the biodiversity between samples?</div>
+</div>
+</div>
+<p>The following questions can be answered using the <code class="docutils literal notranslate"><span class="pre">Try</span> <span class="pre">our</span> <span class="pre">examples</span></code>:<code class="docutils literal notranslate"><span class="pre">Mammalian</span> <span class="pre">gut</span></code> data set.</p>
+<div class="section" id="alpha-diversity-analysis">
+<h2><span class="math notranslate nohighlight">\(\alpha\)</span>-diversity analysis<a class="headerlink" href="#alpha-diversity-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Lets proceed with the <code class="docutils literal notranslate"><span class="pre">Alpha</span> <span class="pre">diversity</span> <span class="pre">analyses</span></code>.
+Familiarize yourself with the different <code class="docutils literal notranslate"><span class="pre">diversity</span> <span class="pre">measures</span></code> by hoovering over the <code class="docutils literal notranslate"><span class="pre">?</span></code>.
+Apply the alpha diversity analyses at the species level using those measures that were also introduced in the lecture.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>MicrobiomeAnalyst does not have an option to test whether data is normally distributed.
+As you know from the course <cite>Data verzamelen en analyseren</cite>, using a parametric test, like an ANOVA, requires that your data (technically the residuals) are normally distributed.
+Non-parametric tests like the Kruskall-Wallis test can also be used if the data is not normally distributed.
+Make sure you apply an appropriate test for all analyses.</p>
+</div>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="_images/MA-alpha-observed-diet.png"><img alt="_images/MA-alpha-observed-diet.png" src="_images/MA-alpha-observed-diet.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">The observed species richness in the mamalian gut samples from the different diet groups.
+Boxes represent the interquartile range (IQR) and the median. Whiskers represent 1.5x the IQR. Diamonds represent the mean. Kruskal-Wallis test: stat = 13.10, n = 36, p = 0.0014.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="_images/MA-alpha-shannon-diet.png"><img alt="_images/MA-alpha-shannon-diet.png" src="_images/MA-alpha-shannon-diet.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">The species-level shannon diversity of the mamalian gut samples from the different diet groups.
+Boxes represent the interquartile range (IQR) and the median. Whiskers represent 1.5x the IQR. Diamonds represent the mean. Kruskal-Wallis test: stat = 3.81, n = 36, p = 0.1487.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-question-18 admonition">
+<p class="admonition-title">Question 18.</p>
+<div class="line-block">
+<div class="line">Discuss which <code class="docutils literal notranslate"><span class="pre">statistical</span> <span class="pre">method</span></code> to apply and why.</div>
+<div class="line">Comparing the observed richness and the Shannon index, discuss why their results differ with respect to the difference between omnivores and carnivores.</div>
+<div class="line">What other <span class="math notranslate nohighlight">\(\alpha\)</span>-diversity measure, not implemented in MicrobiomeAnalyst, could provide further information?</div>
+</div>
+</div>
+<p>Recall your hypotheses from question 3.</p>
+<div class="admonition-question-20 admonition">
+<p class="admonition-title">Question 20.</p>
+<div class="line-block">
+<div class="line">How do your results relate to your hypotheses?</div>
+<div class="line">Discuss potential explanations why your results are different than expected.</div>
+<div class="line">Which of the two figures (sample-level or group-level) best demonstrated the differences between diets? Which figure would be most appropriate to include in your report/a scientific publication?</div>
+</div>
+</div>
+</div>
+<div class="section" id="beta-diversity-analysis">
+<h2><span class="math notranslate nohighlight">\(\beta\)</span>-diversity analysis<a class="headerlink" href="#beta-diversity-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Lets proceed with the <code class="docutils literal notranslate"><span class="pre">Beta</span> <span class="pre">diversity</span> <span class="pre">analyses</span></code> and perform the Principle Coordinate Analysis (PCoA).
+Start with the Bray-Curtis index of the species abundances and the (non-parametric) PERMANOVA statistical test.</p>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="_images/MA-beta-braycurtis.png"><img alt="_images/MA-beta-braycurtis.png" src="_images/MA-beta-braycurtis.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
+Bray-Curtis distances based on the species abundances. PERMANOVA: F = 5.11, n = 36, p &lt; 0.001.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Recall your hypotheses from question 3.</p>
+<div class="admonition-question-21 admonition">
+<p class="admonition-title">Question 21.</p>
+<div class="line-block">
+<div class="line">Which Diet groups differ most strongly from each other?</div>
+<div class="line">Which Diet group is most variable across different samples?</div>
+<div class="line">How do your results relate to your hypotheses?</div>
+<div class="line">Discuss potential explanations why your results are different than expected.</div>
+</div>
+</div>
+<p>Repeat the analyses but now using the Jaccard index.</p>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="_images/MA-beta-jaccard.png"><img alt="_images/MA-beta-jaccard.png" src="_images/MA-beta-jaccard.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
+Jaccard distances based on the species occurrences. PERMANOVA: F = 3.50, n = 36, p &lt; 0.001.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-question-22 admonition">
+<p class="admonition-title">Question 22.</p>
+<div class="line-block">
+<div class="line">Based on what you learned in the lecture, discuss what the difference is between the Bray-Curtis distance and the Jaccard distance.</div>
+<div class="line">Does the PCoA plot based on the Jaccard index differ from the PCoA plot based on the Bray-Curtis index?</div>
+<div class="line">What biological interpretation can you draw based on this distinction or the lack thereof?</div>
+<div class="line">Which of these two analyses better explains the variation in the data? Hint: note the PCoA axes.</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="composition.html" class="btn btn-neutral float-left" title="Community composition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Evelien Jongepier.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>

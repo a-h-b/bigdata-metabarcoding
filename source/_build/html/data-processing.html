@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data filtering and normalization &mdash; Microbiome Tutorial 2022.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Community composition" href="composition.html" />
+    <link rel="prev" title="Getting started" href="getting-started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Microbiome Tutorial
+          </a>
+              <div class="version">
+                0.3.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data filtering and normalization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-filtering">Data Filtering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-normalization">Data Normalization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="composition.html">Community composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diversity.html">Biodiversity</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Microbiome Tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Data filtering and normalization</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="data-filtering-and-normalization">
+<h1>Data filtering and normalization<a class="headerlink" href="#data-filtering-and-normalization" title="Permalink to this headline">¶</a></h1>
+<p>The first step in metabarcoding (or any other kind of) analyses is to check your data.
+The <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Summary</span></code> and <code class="docutils literal notranslate"><span class="pre">Library</span> <span class="pre">Size</span> <span class="pre">Overview</span></code> tabs of the <cite>Data Integrity Check</cite> page give some important summary statistics.
+These can help you decide on how to proceed with the analyses.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="_images/MA-libsize.png"><img alt="_images/MA-libsize.png" src="_images/MA-libsize.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Library size overview for the mammalian gut example data in MicrobiomeAnalyst. The library size is the number of reads per sample.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-question-4 admonition">
+<p class="admonition-title">Question 4.</p>
+<div class="line-block">
+<div class="line">Based on what you learned in the lecture about sparsity and undersampling, how do you evaluate these first results?</div>
+<div class="line">Discuss which summary statistics give information about sparsity / undersampling.</div>
+<div class="line">Discuss what causes sparsity / undersampling in metabarcoding data and why it could be a problem.</div>
+<div class="line">How can you deal with sparsity / undersampling in metabarcoding analyses?</div>
+</div>
+</div>
+<div class="admonition-question-5 admonition">
+<p class="admonition-title">Question 5.</p>
+<div class="line-block">
+<div class="line">Based on what you learned in the lecture about unequal sampling depth, how do you evaluate these first results?</div>
+<div class="line">Discuss which of these results give information about unequal sampling depth.</div>
+<div class="line">Discuss what causes unequal sampling depth in metabarcoding data and why it could be a problem.</div>
+<div class="line">How can you deal with unequal sampling depth in metabarcoding analyses?</div>
+</div>
+</div>
+<p>Lets <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code></p>
+<div class="section" id="data-filtering">
+<h2>Data Filtering<a class="headerlink" href="#data-filtering" title="Permalink to this headline">¶</a></h2>
+<p>Data filtering aims to remove low quality or uninformative features to improve downstream statistical analysis.
+Features with very small counts in very few samples should be excluded from analyses because they are likely due to sequencing errors or low-level contaminations.</p>
+<p>Disable data filtering and <code class="docutils literal notranslate"><span class="pre">Submit</span></code>.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="_images/MA-filter.png"><img alt="_images/MA-filter.png" src="_images/MA-filter.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Feature filtering settings to disable filtering in MicrobiomeAnalyst.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-question-6 admonition">
+<p class="admonition-title">Question 6.</p>
+<div class="line-block">
+<div class="line">How many features remain according to the results in the blue pop-up box?</div>
+<div class="line">Is this what you expect based on the results in the Data Integrity Check? Discuss why / why not.</div>
+</div>
+</div>
+<p>Systematically change the <code class="docutils literal notranslate"><span class="pre">minimum</span> <span class="pre">count</span></code> filtering option (disable low variance filtering, we will not focus on that in this course).</p>
+<div class="admonition-question-7 admonition">
+<p class="admonition-title">Question 7.</p>
+<div class="line-block">
+<div class="line">What happens if you set the value too high?</div>
+</div>
+</div>
+<p>Lets disable data filtering and <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code>.</p>
+</div>
+<div class="section" id="data-normalization">
+<h2>Data Normalization<a class="headerlink" href="#data-normalization" title="Permalink to this headline">¶</a></h2>
+<p>The second important step in data preparation for metabarcoding analyses is data normalization.
+Normalization removes biases due to for instance unequal sampling depth and thus allows us to directly compare the community composition of different samples.</p>
+<p>Lets first disable data normalization, <code class="docutils literal notranslate"><span class="pre">Submit</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code> and select <code class="docutils literal notranslate"><span class="pre">Rarefaction</span> <span class="pre">Curve</span></code>.
+This gives a set of rarefaction curves, where each curve represents a sample of the gut microbiome of one of the mammalian species.</p>
+<div class="figure align-default" id="id3">
+<img alt="_images/MA-rarefactioncurve.png" src="_images/MA-rarefactioncurve.png" />
+<p class="caption"><span class="caption-text">Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = original, steps = 20, group based on = none).</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>The saturation (leveling off) of the rarefaction curve gives information on how well the species richness estimate based on the sample reflects the true species richness in the environment (here the mammalian gut).</p>
+<div class="admonition-question-8 admonition">
+<p class="admonition-title">Question 8.</p>
+<div class="line-block">
+<div class="line">Given the shape of the curves, do you think these samples captured the complete microbial community in the gut of each of these species? Why / Why not?</div>
+</div>
+</div>
+<p>Especially when the rarefaction curves are not saturated, the sampling depth (sequence sample size) can have a major impact on the species richness estimate.</p>
+<div class="admonition-question-9 admonition">
+<p class="admonition-title">Question 9.</p>
+<div class="line-block">
+<div class="line">Based on what you learned in the lecture, discuss what can cause unequal sampling depth.</div>
+<div class="line">Which sample has the higher species richness estimate, <cite>Horse1</cite> or <cite>Chimp1</cite>?</div>
+<div class="line">Which gut community is probably more species rich, that of <cite>Horse1</cite> or <cite>Chimp1</cite>?</div>
+<div class="line">What do you conclude about the comparability of these original samples?</div>
+</div>
+</div>
+<p>One data normalization method that can remove biases due to unequal sampling depth is to rarefy upto the smallest sampling depth (i.e. the rarefaction depth).
+For samples with a higher sampling depth, this means taking a random subsample of the reads (without replacement) up to the rarefaction depth.</p>
+<p>Using the results of the <code class="docutils literal notranslate"><span class="pre">Library</span> <span class="pre">Size</span> <span class="pre">Overview</span></code> on the <cite>Data Integrity Check</cite> page and the rarefaction curve, mentally draw a line at the rarefaction depth.</p>
+<div class="admonition-question-10 admonition">
+<p class="admonition-title">Question 10.</p>
+<div class="line-block">
+<div class="line">Discuss whether rarefying improves the comparability of the samples.</div>
+<div class="line">How does rarefying affect the accuracy of the species richness estimates?</div>
+</div>
+</div>
+<p>Because rarefying often results in the loss of a lot of data, it may be worth to consider excluding certain samples from the analyses rather than accepting a very low rarefaction depth.</p>
+<div class="admonition-question-11 admonition">
+<p class="admonition-title">Question 11.</p>
+<div class="line-block">
+<div class="line">Given the <code class="docutils literal notranslate"><span class="pre">Library</span> <span class="pre">Size</span> <span class="pre">Overview</span></code> on the <cite>Data Integrity Check</cite> page, decide on the best strategy for sample filtering and normalization.</div>
+</div>
+</div>
+<p>Now implement this strategy on 1) the <code class="docutils literal notranslate"><span class="pre">sample</span> <span class="pre">filtering</span></code> tab of the <cite>Data filtering page</cite> and 2) the <cite>Data normalization</cite> page.
+<code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code> again to the <code class="docutils literal notranslate"><span class="pre">Rarefaction</span> <span class="pre">curve</span></code>.</p>
+<div class="admonition-question-12 admonition">
+<p class="admonition-title">Question 12.</p>
+<div class="line-block">
+<div class="line">Are you satisfied with the results?</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="getting-started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="composition.html" class="btn btn-neutral float-right" title="Community composition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Evelien Jongepier.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>

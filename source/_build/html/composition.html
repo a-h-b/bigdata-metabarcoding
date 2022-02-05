@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community composition &mdash; Microbiome Tutorial 2022.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Biodiversity" href="diversity.html" />
+    <link rel="prev" title="Data filtering and normalization" href="data-processing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Microbiome Tutorial
+          </a>
+              <div class="version">
+                0.3.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-processing.html">Data filtering and normalization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Community composition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#absolute-abundances">Absolute abundances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#relative-abundances">Relative abundances</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="diversity.html">Biodiversity</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Microbiome Tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Community composition</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="community-composition">
+<h1>Community composition<a class="headerlink" href="#community-composition" title="Permalink to this headline">¶</a></h1>
+<p>The next step in the analyses of microbial communities is to visualize the community composition.
+In this part of the tutorial you will learn how to plot and interpret microbiome data based on the <code class="docutils literal notranslate"><span class="pre">Try</span> <span class="pre">our</span> <span class="pre">examples</span></code>: <code class="docutils literal notranslate"><span class="pre">Mammalian</span> <span class="pre">gut</span></code> data set.</p>
+<p>Upload the data and disable data filtering and normalization. Then <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code> to <code class="docutils literal notranslate"><span class="pre">Stacked</span> <span class="pre">bar/area</span> <span class="pre">plot</span></code>.</p>
+<div class="section" id="absolute-abundances">
+<h2>Absolute abundances<a class="headerlink" href="#absolute-abundances" title="Permalink to this headline">¶</a></h2>
+<p>Plot the absolute abundances of the phyla present in the mammalian gut samples.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="_images/MA-barplot-aa.png"><img alt="_images/MA-barplot-aa.png" src="_images/MA-barplot-aa.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-text">Absolute abundances of the phyla present in the mammalian gut samples grouped by diet type.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-question-13 admonition">
+<p class="admonition-title">Question 13.</p>
+<div class="line-block">
+<div class="line">Apart from the differences between the three diet groups, what are the most striking differences between samples?</div>
+<div class="line">Discuss what, if any, is your biological interpretation of these differences.</div>
+<div class="line">Hint: Discuss which sample contains most Firmicutes bacteria, <cite>BighornW3</cite> or <cite>Saki</cite>?</div>
+<div class="line">Hint: Discuss which gut microbiome probably contains more Firmucutes bacteria, <cite>BighornW3</cite> or <cite>Saki</cite>?</div>
+</div>
+</div>
+</div>
+<div class="section" id="relative-abundances">
+<h2>Relative abundances<a class="headerlink" href="#relative-abundances" title="Permalink to this headline">¶</a></h2>
+<p>Now plot the relative abundances of the phyla present in the mammalian gut samples and compare the barplots of the absolute and relative abundances.</p>
+<div class="admonition-question-14 admonition">
+<p class="admonition-title">Question 14.</p>
+<div class="line-block">
+<div class="line">Given what you learned in the lecture about the compositional nature of metabarcoding data, which plot gives a better representation of the community composition of the mammalian gut?</div>
+<div class="line">Can you think of another way to normalize the abundances across samples? Hint: see question 10 and 11.</div>
+</div>
+</div>
+<p>Apply this normalization and compare the three diet groups.</p>
+<div class="admonition-question-15 admonition">
+<p class="admonition-title">Question 15.</p>
+<div class="line-block">
+<div class="line">What are the most striking differences in the community composition between the diet groups? (just highlight a few).</div>
+<div class="line">Discuss which diet group probably has the highest evenness at phylum level? (we will come back to this later this later)</div>
+</div>
+</div>
+<p>Compare the View options <code class="docutils literal notranslate"><span class="pre">Organize</span> <span class="pre">samples</span> <span class="pre">by</span> <span class="pre">Diet</span></code> and <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">samples</span> <span class="pre">to</span> <span class="pre">groups</span> <span class="pre">Diet</span></code>.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="_images/MA-rabund-unstacked.png"><img alt="_images/MA-rabund-unstacked.png" src="_images/MA-rabund-unstacked.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-text">Relative abundances of the phyla present in the mammalian gut samples organized by diet type.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="_images/MA-rabund-stacked.png"><img alt="_images/MA-rabund-stacked.png" src="_images/MA-rabund-stacked.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-text">Relative abundances of the phyla present in the mammalian gut samples merged by diet type.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-question-16 admonition">
+<p class="admonition-title">Question 16.</p>
+<div class="line-block">
+<div class="line">Which plot more clearly demonstrates the differences between diet groups?</div>
+<div class="line">Do you think this plot is a fair representation of the true variation between samples? Hint: discuss whether Tenericutes bacteria are generally more abundant in omnivores than in the other diet groups?</div>
+<div class="line">Which of these two plots is most essential to include in your report / a scientific publication?</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="data-processing.html" class="btn btn-neutral float-left" title="Data filtering and normalization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="diversity.html" class="btn btn-neutral float-right" title="Biodiversity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Evelien Jongepier.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>

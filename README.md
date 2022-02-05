@@ -1,5 +1,5 @@
 # README for the GitHub Pages Branch
-This branch is simply a cache for the website served from https://ejongepier.github.io/bigdata-metabarcoding.github.io,
+This branch is simply a cache for the website served from https://ejongepier.github.io/bigdata-metabarcoding/,
 and is  not intended to be viewed on github.com.
 For more information on how this site is built using Sphinx, Read the Docs, and GitHub Actions/Pages, see:
  * https://www.docslikecode.com/articles/github-pages-python-sphinx/

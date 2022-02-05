@@ -15,6 +15,6 @@ make github
 ###############
 
 git add .
-git commit -m "Updated index"
+git commit -m "Updated canvas link"
 git push -u origin main
 

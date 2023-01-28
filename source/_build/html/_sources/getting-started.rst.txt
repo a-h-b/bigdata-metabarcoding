@@ -5,7 +5,7 @@ Getting started
 This tutorial will guide you through the analyses, visualization and interpretation of metabarcoding data.
 Once you have finished this tutorial and have met the objectives, you are ready for the module assignment. 
 During the assignment, you will work in teams of two to analyze the composition and diversity of environmental microbiomes and present your results in a report.
-More information on the assignments can be found `on canvas <https://canvas.uva.nl/courses/28531>`_.
+More information on the assignments can be found `on canvas <https://canvas.uva.nl/courses/35953>`_.
 
 
 Objectives

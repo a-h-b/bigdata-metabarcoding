@@ -24,7 +24,7 @@ make github ## custom make rule see Makefile
 # Add README
 cat > README.md <<EOF
 # README for the GitHub Pages Branch
-This branch is simply a cache for the website served from https://ejongepier.github.io/${reponame}/,
+This branch is simply a cache for the website served from https://a-h-b.github.io/${reponame}/,
 and is  not intended to be viewed on github.com.
 For more information on how this site is built using Sphinx, Read the Docs, and GitHub Actions/Pages, see:
  * https://www.docslikecode.com/articles/github-pages-python-sphinx/
@@ -60,7 +60,7 @@ git init
 git add .
 git commit -m "Initialize"
 git branch -M main
-git remote add origin https://github.com/ejongepier/${reponame}.git
+git remote add origin https://github.com/a-h-b/${reponame}.git
 git push -u origin main
 
 # go to github repo settings and select under Github Pages source: main /docs

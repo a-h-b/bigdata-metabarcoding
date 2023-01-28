@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data filtering and normalization &mdash; Microbiome Tutorial 2022.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>Data filtering and normalization &mdash; Microbiome Tutorial 2022.02 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -40,7 +42,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data filtering and normalization</a><ul>
@@ -75,15 +77,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="data-filtering-and-normalization">
-<h1>Data filtering and normalization<a class="headerlink" href="#data-filtering-and-normalization" title="Permalink to this headline">¶</a></h1>
+  <section id="data-filtering-and-normalization">
+<h1>Data filtering and normalization<a class="headerlink" href="#data-filtering-and-normalization" title="Permalink to this heading"></a></h1>
 <p>The first step in metabarcoding (or any other kind of) analyses is to check your data.
 The <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Summary</span></code> and <code class="docutils literal notranslate"><span class="pre">Library</span> <span class="pre">Size</span> <span class="pre">Overview</span></code> tabs of the <cite>Data Integrity Check</cite> page give some important summary statistics.
 These can help you decide on how to proceed with the analyses.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="_images/MA-libsize.png"><img alt="_images/MA-libsize.png" src="_images/MA-libsize.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Library size overview for the mammalian gut example data in MicrobiomeAnalyst. The library size is the number of reads per sample.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Library size overview for the mammalian gut example data in MicrobiomeAnalyst. The library size is the number of reads per sample.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-4 admonition">
 <p class="admonition-title">Question 4.</p>
 <div class="line-block">
@@ -103,15 +107,17 @@ These can help you decide on how to proceed with the analyses.</p>
 </div>
 </div>
 <p>Lets <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code></p>
-<div class="section" id="data-filtering">
-<h2>Data Filtering<a class="headerlink" href="#data-filtering" title="Permalink to this headline">¶</a></h2>
+<section id="data-filtering">
+<h2>Data Filtering<a class="headerlink" href="#data-filtering" title="Permalink to this heading"></a></h2>
 <p>Data filtering aims to remove low quality or uninformative features to improve downstream statistical analysis.
 Features with very small counts in very few samples should be excluded from analyses because they are likely due to sequencing errors or low-level contaminations.</p>
 <p>Disable data filtering and <code class="docutils literal notranslate"><span class="pre">Submit</span></code>.</p>
-<div class="figure align-default" id="id2">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="_images/MA-filter.png"><img alt="_images/MA-filter.png" src="_images/MA-filter.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">Feature filtering settings to disable filtering in MicrobiomeAnalyst.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Feature filtering settings to disable filtering in MicrobiomeAnalyst.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-6 admonition">
 <p class="admonition-title">Question 6.</p>
 <div class="line-block">
@@ -127,17 +133,19 @@ Features with very small counts in very few samples should be excluded from anal
 </div>
 </div>
 <p>Lets disable data filtering and <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code>.</p>
-</div>
-<div class="section" id="data-normalization">
-<h2>Data Normalization<a class="headerlink" href="#data-normalization" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="data-normalization">
+<h2>Data Normalization<a class="headerlink" href="#data-normalization" title="Permalink to this heading"></a></h2>
 <p>The second important step in data preparation for metabarcoding analyses is data normalization.
 Normalization removes biases due to for instance unequal sampling depth and thus allows us to directly compare the community composition of different samples.</p>
 <p>Lets first disable data normalization, <code class="docutils literal notranslate"><span class="pre">Submit</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code> and select <code class="docutils literal notranslate"><span class="pre">Rarefaction</span> <span class="pre">Curve</span></code>.
 This gives a set of rarefaction curves, where each curve represents a sample of the gut microbiome of one of the mammalian species.</p>
-<div class="figure align-default" id="id3">
+<figure class="align-default" id="id3">
 <img alt="_images/MA-rarefactioncurve.png" src="_images/MA-rarefactioncurve.png" />
-<p class="caption"><span class="caption-text">Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = original, steps = 20, group based on = none).</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = original, steps = 20, group based on = none).</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <p>The saturation (leveling off) of the rarefaction curve gives information on how well the species richness estimate based on the sample reflects the true species richness in the environment (here the mammalian gut).</p>
 <div class="admonition-question-8 admonition">
 <p class="admonition-title">Question 8.</p>
@@ -180,8 +188,8 @@ For samples with a higher sampling depth, this means taking a random subsample o
 <div class="line">Are you satisfied with the results?</div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

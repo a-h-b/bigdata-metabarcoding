@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Getting started &mdash; Microbiome Tutorial 2022.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>Getting started &mdash; Microbiome Tutorial 2022.02 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -40,7 +42,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#objectives">Objectives</a></li>
@@ -75,14 +77,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="getting-started">
-<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+  <section id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h1>
 <p>This tutorial will guide you through the analyses, visualization and interpretation of metabarcoding data.
 Once you have finished this tutorial and have met the objectives, you are ready for the module assignment.
 During the assignment, you will work in teams of two to analyze the composition and diversity of environmental microbiomes and present your results in a report.
 More information on the assignments can be found <a class="reference external" href="https://canvas.uva.nl/courses/28531">on canvas</a>.</p>
-<div class="section" id="objectives">
-<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this heading"></a></h2>
 <p>By the end of this practical you should be able to:</p>
 <ul class="simple">
 <li><p>Describe the scientific context and experimental design of a metabarcoding study.</p></li>
@@ -94,26 +96,30 @@ More information on the assignments can be found <a class="reference external" h
 <li><p>Evaluate how metabarcoding results relate to the research questions and hypotheses.</p></li>
 <li><p>Discuss metabarcoding results in a scientific context.</p></li>
 </ul>
-</div>
-<div class="section" id="experimental-design">
-<h2>Experimental design<a class="headerlink" href="#experimental-design" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="experimental-design">
+<h2>Experimental design<a class="headerlink" href="#experimental-design" title="Permalink to this heading"></a></h2>
 <p>All analyses are performed in <a class="reference external" href="https://www.microbiomeanalyst.ca">MicrobiomeAnalyst</a> (group A)
 or <a class="reference external" href="https://dev.microbiomeanalyst.ca">MicrobiomeAnalyst mirror</a> (group B).</p>
 <p>When you navigate to MicrobiomeAnalyst you have a choice of four different modules.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="_images/MA-startscreen.png"><img alt="_images/MA-startscreen.png" src="_images/MA-startscreen.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Start page of MicrobiomeAnalyst with the four different modules to choose from.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Start page of MicrobiomeAnalyst with the four different modules to choose from.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-1 admonition">
 <p class="admonition-title">Question 1.</p>
 <p>Judging by their brief description in the colored boxes, which module would you use for metabarcoding analyses?
 Discuss the differences in the experimental design and sequencing strategy of MDP and SDP.</p>
 </div>
-<div class="figure align-default" id="id2">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="_images/MA-dataupload.png"><img alt="_images/MA-dataupload.png" src="_images/MA-dataupload.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">Data upload page of microbiome analyst. The three mandatory files are the OTU/ASV table, the metadata file and the taxonomy table.
-For the assignment you will upload your data here. For the tutorial, you will use the example data in the <code class="docutils literal notranslate"><span class="pre">Try</span> <span class="pre">our</span> <span class="pre">examples</span></code> tab.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Data upload page of microbiome analyst. The three mandatory files are the OTU/ASV table, the metadata file and the taxonomy table.
+For the assignment you will upload your data here. For the tutorial, you will use the example data in the <code class="docutils literal notranslate"><span class="pre">Try</span> <span class="pre">our</span> <span class="pre">examples</span></code> tab.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <p>Select the appropriate module and explore what the three mandatory data files should look like by hoovering over the <code class="docutils literal notranslate"><span class="pre">?</span></code>.
 You will notice that none of these files contain actual sequencing data, because the conversion of raw sequencing data into abundance tables and taxonomic classifications was already done for you.</p>
 <div class="admonition-question-2 admonition">
@@ -127,10 +133,12 @@ You will notice that none of these files contain actual sequencing data, because
 </div>
 <p>During the assignments you will upload your own data here, but for the tutorial we will use the example data sets.
 Under <code class="docutils literal notranslate"><span class="pre">Try</span> <span class="pre">our</span> <span class="pre">examples</span></code>, select <code class="docutils literal notranslate"><span class="pre">Mammalian</span> <span class="pre">Gut</span></code>.</p>
-<div class="figure align-default" id="id3">
+<figure class="align-default" id="id3">
 <img alt="_images/MA-mammaliangut.png" src="_images/MA-mammaliangut.png" />
-<p class="caption"><span class="caption-text">Example data of the mammalian gut microbiome in MicrobiomeAnalyst, including a brief description.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Example data of the mammalian gut microbiome in MicrobiomeAnalyst, including a brief description.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-3 admonition">
 <p class="admonition-title">Question 3.</p>
 <div class="line-block">
@@ -149,8 +157,8 @@ In additiion, MicrobiomeAnalyst can time out, which requires that you restart th
 <p class="admonition-title">Note</p>
 <p>In this tutorial, options you can select in MicrobiomeAnalyst are indicated in <code class="docutils literal notranslate"><span class="pre">this</span></code> type set.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

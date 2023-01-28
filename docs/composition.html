@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Community composition &mdash; Microbiome Tutorial 2022.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>Community composition &mdash; Microbiome Tutorial 2022.02 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -40,7 +42,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-processing.html">Data filtering and normalization</a></li>
@@ -75,18 +77,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="community-composition">
-<h1>Community composition<a class="headerlink" href="#community-composition" title="Permalink to this headline">¶</a></h1>
+  <section id="community-composition">
+<h1>Community composition<a class="headerlink" href="#community-composition" title="Permalink to this heading"></a></h1>
 <p>The next step in the analyses of microbial communities is to visualize the community composition.
 In this part of the tutorial you will learn how to plot and interpret microbiome data based on the <code class="docutils literal notranslate"><span class="pre">Try</span> <span class="pre">our</span> <span class="pre">examples</span></code>: <code class="docutils literal notranslate"><span class="pre">Mammalian</span> <span class="pre">gut</span></code> data set.</p>
 <p>Upload the data and disable data filtering and normalization. Then <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code> to <code class="docutils literal notranslate"><span class="pre">Stacked</span> <span class="pre">bar/area</span> <span class="pre">plot</span></code>.</p>
-<div class="section" id="absolute-abundances">
-<h2>Absolute abundances<a class="headerlink" href="#absolute-abundances" title="Permalink to this headline">¶</a></h2>
+<section id="absolute-abundances">
+<h2>Absolute abundances<a class="headerlink" href="#absolute-abundances" title="Permalink to this heading"></a></h2>
 <p>Plot the absolute abundances of the phyla present in the mammalian gut samples.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="_images/MA-barplot-aa.png"><img alt="_images/MA-barplot-aa.png" src="_images/MA-barplot-aa.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-text">Absolute abundances of the phyla present in the mammalian gut samples grouped by diet type.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Absolute abundances of the phyla present in the mammalian gut samples grouped by diet type.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-13 admonition">
 <p class="admonition-title">Question 13.</p>
 <div class="line-block">
@@ -96,9 +100,9 @@ In this part of the tutorial you will learn how to plot and interpret microbiome
 <div class="line">Hint: Discuss which gut microbiome probably contains more Firmucutes bacteria, <cite>BighornW3</cite> or <cite>Saki</cite>?</div>
 </div>
 </div>
-</div>
-<div class="section" id="relative-abundances">
-<h2>Relative abundances<a class="headerlink" href="#relative-abundances" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="relative-abundances">
+<h2>Relative abundances<a class="headerlink" href="#relative-abundances" title="Permalink to this heading"></a></h2>
 <p>Now plot the relative abundances of the phyla present in the mammalian gut samples and compare the barplots of the absolute and relative abundances.</p>
 <div class="admonition-question-14 admonition">
 <p class="admonition-title">Question 14.</p>
@@ -116,14 +120,18 @@ In this part of the tutorial you will learn how to plot and interpret microbiome
 </div>
 </div>
 <p>Compare the View options <code class="docutils literal notranslate"><span class="pre">Organize</span> <span class="pre">samples</span> <span class="pre">by</span> <span class="pre">Diet</span></code> and <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">samples</span> <span class="pre">to</span> <span class="pre">groups</span> <span class="pre">Diet</span></code>.</p>
-<div class="figure align-default" id="id2">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="_images/MA-rabund-unstacked.png"><img alt="_images/MA-rabund-unstacked.png" src="_images/MA-rabund-unstacked.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-text">Relative abundances of the phyla present in the mammalian gut samples organized by diet type.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id3">
+<figcaption>
+<p><span class="caption-text">Relative abundances of the phyla present in the mammalian gut samples organized by diet type.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="_images/MA-rabund-stacked.png"><img alt="_images/MA-rabund-stacked.png" src="_images/MA-rabund-stacked.png" style="width: 800px;" /></a>
-<p class="caption"><span class="caption-text">Relative abundances of the phyla present in the mammalian gut samples merged by diet type.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Relative abundances of the phyla present in the mammalian gut samples merged by diet type.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-16 admonition">
 <p class="admonition-title">Question 16.</p>
 <div class="line-block">
@@ -132,8 +140,8 @@ In this part of the tutorial you will learn how to plot and interpret microbiome
 <div class="line">Which of these two plots is most essential to include in your report / a scientific publication?</div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

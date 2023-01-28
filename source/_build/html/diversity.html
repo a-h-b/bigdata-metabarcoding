@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Biodiversity &mdash; Microbiome Tutorial 2022.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>Biodiversity &mdash; Microbiome Tutorial 2022.02 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -39,7 +42,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-processing.html">Data filtering and normalization</a></li>
@@ -74,13 +77,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="biodiversity">
-<h1>Biodiversity<a class="headerlink" href="#biodiversity" title="Permalink to this headline">¶</a></h1>
+  <section id="biodiversity">
+<h1>Biodiversity<a class="headerlink" href="#biodiversity" title="Permalink to this heading"></a></h1>
 <p>When analyzing metabarcoding data we are typically interested in the diversity within samples as well as the diversity between samples.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <img alt="_images/MA-tree.png" src="_images/MA-tree.png" />
-<p class="caption"><span class="caption-text">Analyses methods you can choose from in MicrobiomeAnalyst.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Analyses methods you can choose from in MicrobiomeAnalyst.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-17 admonition">
 <p class="admonition-title">Question 17.</p>
 <div class="line-block">
@@ -89,8 +94,8 @@
 </div>
 </div>
 <p>The following questions can be answered using the <code class="docutils literal notranslate"><span class="pre">Try</span> <span class="pre">our</span> <span class="pre">examples</span></code>:<code class="docutils literal notranslate"><span class="pre">Mammalian</span> <span class="pre">gut</span></code> data set.</p>
-<div class="section" id="alpha-diversity-analysis">
-<h2><span class="math notranslate nohighlight">\(\alpha\)</span>-diversity analysis<a class="headerlink" href="#alpha-diversity-analysis" title="Permalink to this headline">¶</a></h2>
+<section id="alpha-diversity-analysis">
+<h2><span class="math notranslate nohighlight">\(\alpha\)</span>-diversity analysis<a class="headerlink" href="#alpha-diversity-analysis" title="Permalink to this heading"></a></h2>
 <p>Lets proceed with the <code class="docutils literal notranslate"><span class="pre">Alpha</span> <span class="pre">diversity</span> <span class="pre">analyses</span></code>.
 Familiarize yourself with the different <code class="docutils literal notranslate"><span class="pre">diversity</span> <span class="pre">measures</span></code> by hoovering over the <code class="docutils literal notranslate"><span class="pre">?</span></code>.
 Apply the alpha diversity analyses at the species level using those measures that were also introduced in the lecture.</p>
@@ -101,16 +106,20 @@ As you know from the course <cite>Data verzamelen en analyseren</cite>, using a 
 Non-parametric tests like the Kruskall-Wallis test can also be used if the data is not normally distributed.
 Make sure you apply an appropriate test for all analyses.</p>
 </div>
-<div class="figure align-default" id="id2">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="_images/MA-alpha-observed-diet.png"><img alt="_images/MA-alpha-observed-diet.png" src="_images/MA-alpha-observed-diet.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">The observed species richness in the mamalian gut samples from the different diet groups.
-Boxes represent the interquartile range (IQR) and the median. Whiskers represent 1.5x the IQR. Diamonds represent the mean. Kruskal-Wallis test: stat = 13.10, n = 36, p = 0.0014.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id3">
+<figcaption>
+<p><span class="caption-text">The observed species richness in the mamalian gut samples from the different diet groups.
+Boxes represent the interquartile range (IQR) and the median. Whiskers represent 1.5x the IQR. Diamonds represent the mean. Kruskal-Wallis test: stat = 13.10, n = 36, p = 0.0014.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="_images/MA-alpha-shannon-diet.png"><img alt="_images/MA-alpha-shannon-diet.png" src="_images/MA-alpha-shannon-diet.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">The species-level shannon diversity of the mamalian gut samples from the different diet groups.
-Boxes represent the interquartile range (IQR) and the median. Whiskers represent 1.5x the IQR. Diamonds represent the mean. Kruskal-Wallis test: stat = 3.81, n = 36, p = 0.1487.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">The species-level shannon diversity of the mamalian gut samples from the different diet groups.
+Boxes represent the interquartile range (IQR) and the median. Whiskers represent 1.5x the IQR. Diamonds represent the mean. Kruskal-Wallis test: stat = 3.81, n = 36, p = 0.1487.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-18 admonition">
 <p class="admonition-title">Question 18.</p>
 <div class="line-block">
@@ -128,16 +137,18 @@ Boxes represent the interquartile range (IQR) and the median. Whiskers represent
 <div class="line">Which of the two figures (sample-level or group-level) best demonstrated the differences between diets? Which figure would be most appropriate to include in your report/a scientific publication?</div>
 </div>
 </div>
-</div>
-<div class="section" id="beta-diversity-analysis">
-<h2><span class="math notranslate nohighlight">\(\beta\)</span>-diversity analysis<a class="headerlink" href="#beta-diversity-analysis" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="beta-diversity-analysis">
+<h2><span class="math notranslate nohighlight">\(\beta\)</span>-diversity analysis<a class="headerlink" href="#beta-diversity-analysis" title="Permalink to this heading"></a></h2>
 <p>Lets proceed with the <code class="docutils literal notranslate"><span class="pre">Beta</span> <span class="pre">diversity</span> <span class="pre">analyses</span></code> and perform the Principle Coordinate Analysis (PCoA).
 Start with the Bray-Curtis index of the species abundances and the (non-parametric) PERMANOVA statistical test.</p>
-<div class="figure align-default" id="id4">
+<figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="_images/MA-beta-braycurtis.png"><img alt="_images/MA-beta-braycurtis.png" src="_images/MA-beta-braycurtis.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
-Bray-Curtis distances based on the species abundances. PERMANOVA: F = 5.11, n = 36, p &lt; 0.001.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
+Bray-Curtis distances based on the species abundances. PERMANOVA: F = 5.11, n = 36, p &lt; 0.001.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <p>Recall your hypotheses from question 3.</p>
 <div class="admonition-question-21 admonition">
 <p class="admonition-title">Question 21.</p>
@@ -149,11 +160,13 @@ Bray-Curtis distances based on the species abundances. PERMANOVA: F = 5.11, n = 
 </div>
 </div>
 <p>Repeat the analyses but now using the Jaccard index.</p>
-<div class="figure align-default" id="id5">
+<figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="_images/MA-beta-jaccard.png"><img alt="_images/MA-beta-jaccard.png" src="_images/MA-beta-jaccard.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
-Jaccard distances based on the species occurrences. PERMANOVA: F = 3.50, n = 36, p &lt; 0.001.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
+Jaccard distances based on the species occurrences. PERMANOVA: F = 3.50, n = 36, p &lt; 0.001.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition-question-22 admonition">
 <p class="admonition-title">Question 22.</p>
 <div class="line-block">
@@ -163,8 +176,8 @@ Jaccard distances based on the species occurrences. PERMANOVA: F = 3.50, n = 36,
 <div class="line">Which of these two analyses better explains the variation in the data? Hint: note the PCoA axes.</div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

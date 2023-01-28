@@ -6,10 +6,11 @@
 Welcome to the Big Data: Microbiome tutorial!
 =============================================
 
-This tutorial is part of the Microbiome module of the BSc Biology course `Keystone Project III: Big Data <https://canvas.uva.nl/courses/10430>`_. 
+This tutorial is part of the Microbiome module of the BSc Biology course `Keystone Project III: Big Data <https://canvas.uva.nl/courses/35953>`_. 
 The *Getting started* section contains important information on how to use this tutorial.
 
-**Contact person**: `Evelien Jongepier <https://ibed.uva.nl/profile/j/o/e.jongepier/e.jongepier.html?origin=2mxkhlJzTxuRqHa1iUg2bQ>`_ - e.jongepier@uva.nl
+**Author**: Evelien Jongepier
+**Contact person**: `Anna Heintz-Buschart <https://https://sils.uva.nl/profile/h/e/a.u.s.heintzbuschart/a.u.s.heintz-buschart.html>`_
 
 .. toctree::
    :maxdepth: 3

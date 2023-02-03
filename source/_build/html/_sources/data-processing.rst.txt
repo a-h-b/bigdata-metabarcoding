@@ -12,10 +12,10 @@ These can help you decide on how to proceed with the analyses.
 
 .. admonition:: Question 4.
 
-   | Based on what you learned in the lecture about sparsity and undersampling, how do you evaluate these first results?
-   | Discuss which summary statistics give information about sparsity / undersampling.
-   | Discuss what causes sparsity / undersampling in metabarcoding data and why it could be a problem.
-   | How can you deal with sparsity / undersampling in metabarcoding analyses?
+   | Based on what you learned in the lecture about undersampling / sequencing depth, how do you evaluate these first results?
+   | Discuss which summary statistics give information about undersampling.
+   | Discuss what causes undersampling in metabarcoding data and why it could be a problem.
+   | How can you deal with undersampling in metabarcoding analyses?
 
 .. admonition:: Question 5.
 
@@ -32,9 +32,11 @@ Data Filtering
 ---------------------------------
 
 Data filtering aims to remove low quality or uninformative features to improve downstream statistical analysis.
-Features with very small counts in very few samples should be excluded from analyses because they are likely due to sequencing errors or low-level contaminations.
+Features with very small counts in very few samples are more likely due to sequencing errors or low-level contaminations. Even if they are real, they carry little information compared to other features and the analysis will be more efficient without them, but the results will not be drastically different. Their removal is advised.
 
-Disable data filtering and ``Submit``.
+Let's look at the effect of removing rare features. 
+
+First, use unfiltered data: Disable data filtering and ``Submit``.
 
 .. figure:: images/MA-filter.png
    :width: 400
@@ -46,13 +48,13 @@ Disable data filtering and ``Submit``.
    | How many features remain according to the results in the blue pop-up box?
    | Is this what you expect based on the results in the Data Integrity Check? Discuss why / why not.
 
-Systematically change the ``minimum count`` filtering option (disable low variance filtering, we will not focus on that in this course).
+Systematically change the ``minimum count`` filtering option (keep low variance filtering disabled, we will not focus on that in this course).
 
 .. admonition:: Question 7.
 
    | What happens if you set the value too high?
 
-Lets disable data filtering and ``>> Proceed``.
+Choose a data filtering setting and ``>> Proceed``. (The tutorial's figures are based on no filtering.)
 
 
 
@@ -60,16 +62,16 @@ Data Normalization
 ---------------------------------
 
 The second important step in data preparation for metabarcoding analyses is data normalization.
-Normalization removes biases due to for instance unequal sampling depth and thus allows us to directly compare the community composition of different samples.
+Normalization removes biases due to, for instance, unequal sampling depth and thus allows us to directly compare the community composition of different samples.
 
 Lets first disable data normalization, ``Submit``, ``>> Proceed`` and select ``Rarefaction Curve``.
 This gives a set of rarefaction curves, where each curve represents a sample of the gut microbiome of one of the mammalian species.
 
 .. figure:: images/MA-rarefactioncurve.png
 
-   Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = original, steps = 20, group based on = none).
+   Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = filtered, steps = 20, group by = None).
  
-The saturation (leveling off) of the rarefaction curve gives information on how well the species richness estimate based on the sample reflects the true species richness in the environment (here the mammalian gut).
+The saturation (leveling off) of the rarefaction curve gives information on how well the species richness estimate based on the sample reflects the true species richness in the environment (here: the mammalian gut).
  
 .. admonition:: Question 8.
 

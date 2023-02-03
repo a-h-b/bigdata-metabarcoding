@@ -38,26 +38,28 @@ Experimental design
 All analyses are performed in `MicrobiomeAnalyst <https://www.microbiomeanalyst.ca>`_ (group A)
 or `MicrobiomeAnalyst mirror <https://dev.microbiomeanalyst.ca>`_ (group B).
 
-When you navigate to MicrobiomeAnalyst you have a choice of four different modules.
+When you navigate to MicrobiomeAnalyst you have a choice of six different modules.
 
 .. figure:: images/MA-startscreen.png
    :width: 600
 
-   Start page of MicrobiomeAnalyst with the four different modules to choose from.
+   Six options on the start page of MicrobiomeAnalyst
 
 .. admonition:: Question 1.
 
    Judging by their brief description in the colored boxes, which module would you use for metabarcoding analyses?
-   Discuss the differences in the experimental design and sequencing strategy of MDP and SDP.
+   Discuss the differences in the experimental design and sequencing strategy of Marker Data Profiling and Shotgun Data Profiling.
+
+Select the appropriate module.
+
+Explore what the three mandatory data files should look like by hoovering over the ``?``.
+You will notice that none of these files contain actual sequencing data, because the conversion of raw sequencing data into abundance tables and taxonomic classifications was already done for you.
 
 .. figure:: images/MA-dataupload.png
    :width: 400
 
    Data upload page of microbiome analyst. The three mandatory files are the OTU/ASV table, the metadata file and the taxonomy table.
    For the assignment you will upload your data here. For the tutorial, you will use the example data in the ``Try our examples`` tab.
-
-Select the appropriate module and explore what the three mandatory data files should look like by hoovering over the ``?``.
-You will notice that none of these files contain actual sequencing data, because the conversion of raw sequencing data into abundance tables and taxonomic classifications was already done for you.
 
 .. admonition:: Question 2.
 
@@ -84,7 +86,7 @@ Under ``Try our examples``, select ``Mammalian Gut``.
 
    Make sure you record all methodological details needed to reproduce your results. 
    This is good scientific practice and a therefore a grading criteria in the assessment of your report.
-   In additiion, MicrobiomeAnalyst can time out, which requires that you restart the session and thus replicate exactly what you did before. 
+   In addition, MicrobiomeAnalyst can time out, which requires that you restart the session and thus replicate exactly what you did before. 
 
 .. note::
 

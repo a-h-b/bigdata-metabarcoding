@@ -2,9 +2,9 @@ Community composition
 ================================
 
 The next step in the analyses of microbial communities is to visualize the community composition.
-In this part of the tutorial you will learn how to plot and interpret microbiome data based on the ``Try our examples``: ``Mammalian gut`` data set.
+In this part of the tutorial you will learn how to plot and interpret microbiome data - it is still based on the ``Try our examples``: ``Mammalian gut`` data set.
 
-Upload the data and disable data filtering and normalization. Then ``>> Proceed`` to ``Stacked bar/area plot``.
+If the following are not current settings, select the data, disable data filtering and normalization. Then ``>> Proceed`` to ``Stacked bar/area plot``.
 
 
 Absolute abundances
@@ -31,7 +31,7 @@ Now plot the relative abundances of the phyla present in the mammalian gut sampl
 
 .. admonition:: Question 14.
 
-   | Given what you learned in the lecture about the compositional nature of metabarcoding data, which plot gives a better representation of the community composition of the mammalian gut?
+   | Given what you learned in the lecture about the differences of library size / sequencing depth in metabarcoding data, which plot gives a better representation of the community composition of the mammalian gut?
    | Can you think of another way to normalize the abundances across samples? Hint: see question 10 and 11.
 
 Apply this normalization and compare the three diet groups.

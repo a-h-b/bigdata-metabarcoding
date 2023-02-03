@@ -25,7 +25,7 @@ Apply the alpha diversity analyses at the species level using those measures tha
 .. warning::
 
    MicrobiomeAnalyst does not have an option to test whether data is normally distributed.
-   As you know from the course `Data verzamelen en analyseren`, using a parametric test, like an ANOVA, requires that your data (technically the residuals) are normally distributed. 
+   As you know from the course `Data verzamelen en analyseren`, using a parametric test, like an ANOVA, requires that the residuals are normally distributed. 
    Non-parametric tests like the Kruskall-Wallis test can also be used if the data is not normally distributed.
    Make sure you apply an appropriate test for all analyses.
 
@@ -61,13 +61,13 @@ Recall your hypotheses from question 3.
 :math:`\beta`-diversity analysis
 ----------------------------------
 
-Lets proceed with the ``Beta diversity analyses`` and perform the Principle Coordinate Analysis (PCoA).
+Lets proceed with the ``Beta diversity analyses`` and perform the Principal Coordinate Analysis (PCoA).
 Start with the Bray-Curtis index of the species abundances and the (non-parametric) PERMANOVA statistical test.
 
 .. figure:: images/MA-beta-braycurtis.png
    :width: 600
 
-   Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
+   Principal coordinate plot of the differences in mammalian gut community composition between diet groups.
    Bray-Curtis distances based on the species abundances. PERMANOVA: F = 5.11, n = 36, p < 0.001.
 
 
@@ -85,7 +85,7 @@ Repeat the analyses but now using the Jaccard index.
 .. figure:: images/MA-beta-jaccard.png
    :width: 600
 
-   Principle coordinate plot of the differences in mammalian gut community composition between diet groups.
+   Principal coordinate plot of the differences in mammalian gut community composition between diet groups.
    Jaccard distances based on the species occurrences. PERMANOVA: F = 3.50, n = 36, p < 0.001.
 
 
@@ -97,4 +97,5 @@ Repeat the analyses but now using the Jaccard index.
    | Which of these two analyses better explains the variation in the data? Hint: note the PCoA axes.
 
 
+You've reached the end of the tutorial. Tomorrow, you'll apply the methods to your assignment data set and report the results.
       

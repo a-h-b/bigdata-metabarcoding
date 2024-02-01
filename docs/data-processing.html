@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data filtering and normalization &mdash; Microbiome Tutorial 2023.02 documentation</title>
+  <title>Data filtering and normalization &mdash; Microbiome Tutorial 2024.02 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -32,7 +32,7 @@
             <a href="index.html" class="icon icon-home"> Microbiome Tutorial
           </a>
               <div class="version">
-                0.4.0
+                0.5.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -80,10 +80,10 @@
   <section id="data-filtering-and-normalization">
 <h1>Data filtering and normalization<a class="headerlink" href="#data-filtering-and-normalization" title="Permalink to this heading"></a></h1>
 <p>The first step in metabarcoding (or any other kind of) analyses is to check your data.
-The <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Summary</span></code> and <code class="docutils literal notranslate"><span class="pre">Library</span> <span class="pre">Size</span> <span class="pre">Overview</span></code> tabs of the <cite>Data Integrity Check</cite> page give some important summary statistics.
+The <code class="docutils literal notranslate"><span class="pre">Microbiome</span> <span class="pre">data</span> <span class="pre">overview</span></code> tab of the <cite>Data Inspection</cite> page gives some important summary statistics.
 These can help you decide on how to proceed with the analyses.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="_images/MA-libsize.png"><img alt="_images/MA-libsize.png" src="_images/MA-libsize.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/data-check.png"><img alt="_images/data-check.png" src="_images/data-check.png" style="width: 600px;" /></a>
 <figcaption>
 <p><span class="caption-text">Library size overview for the mammalian gut example data in MicrobiomeAnalyst. The library size is the number of reads per sample.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
@@ -142,9 +142,9 @@ Normalization removes biases due to, for instance, unequal sampling depth and th
 <p>Lets first disable data normalization, <code class="docutils literal notranslate"><span class="pre">Submit</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Proceed</span></code> and select <code class="docutils literal notranslate"><span class="pre">Rarefaction</span> <span class="pre">Curve</span></code>.
 This gives a set of rarefaction curves, where each curve represents a sample of the gut microbiome of one of the mammalian species.</p>
 <figure class="align-default" id="id3">
-<img alt="_images/MA-rarefactioncurve.png" src="_images/MA-rarefactioncurve.png" />
+<img alt="_images/rarecurves.png" src="_images/rarecurves.png" />
 <figcaption>
-<p><span class="caption-text">Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = filtered, steps = 20, group by = None).</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = filtered, steps = 20, colour by = Diet).</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The saturation (leveling off) of the rarefaction curve gives information on how well the species richness estimate based on the sample reflects the true species richness in the environment (here: the mammalian gut).</p>
@@ -178,7 +178,7 @@ For samples with a higher sampling depth, this means taking a random subsample o
 <div class="admonition-question-11 admonition">
 <p class="admonition-title">Question 11.</p>
 <div class="line-block">
-<div class="line">Given the <code class="docutils literal notranslate"><span class="pre">Library</span> <span class="pre">Size</span> <span class="pre">Overview</span></code> on the <cite>Data Integrity Check</cite> page, decide on the best strategy for sample filtering and normalization.</div>
+<div class="line">Given the library size overview plot on the <cite>Data Inspection</cite> page, decide on the best strategy for sample filtering and normalization.</div>
 </div>
 </div>
 <p>Now implement this strategy on 1) the <code class="docutils literal notranslate"><span class="pre">sample</span> <span class="pre">filtering</span></code> tab of the <cite>Data filtering page</cite> and 2) the <cite>Data normalization</cite> page.

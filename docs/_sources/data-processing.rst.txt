@@ -2,10 +2,10 @@ Data filtering and normalization
 =================================
 
 The first step in metabarcoding (or any other kind of) analyses is to check your data.
-The ``Text Summary`` and ``Library Size Overview`` tabs of the `Data Integrity Check` page give some important summary statistics.
+The ``Microbiome data overview`` tab of the `Data Inspection` page gives some important summary statistics.
 These can help you decide on how to proceed with the analyses.
 
-.. figure:: images/MA-libsize.png
+.. figure:: images/data-check.png
    :width: 600
 
    Library size overview for the mammalian gut example data in MicrobiomeAnalyst. The library size is the number of reads per sample.
@@ -67,9 +67,9 @@ Normalization removes biases due to, for instance, unequal sampling depth and th
 Lets first disable data normalization, ``Submit``, ``>> Proceed`` and select ``Rarefaction Curve``.
 This gives a set of rarefaction curves, where each curve represents a sample of the gut microbiome of one of the mammalian species.
 
-.. figure:: images/MA-rarefactioncurve.png
+.. figure:: images/rarecurves.png
 
-   Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = filtered, steps = 20, group by = None).
+   Rarefaction curves for the mammalian gut samples in MicrobiomeAnalyst (parameter settings: data source = filtered, steps = 20, colour by = Diet).
  
 The saturation (leveling off) of the rarefaction curve gives information on how well the species richness estimate based on the sample reflects the true species richness in the environment (here: the mammalian gut).
  
@@ -100,7 +100,7 @@ Because rarefying often results in the loss of a lot of data, it may be worth to
 
 .. admonition:: Question 11.
 
-   | Given the ``Library Size Overview`` on the `Data Integrity Check` page, decide on the best strategy for sample filtering and normalization.
+   | Given the library size overview plot on the `Data Inspection` page, decide on the best strategy for sample filtering and normalization.
 
 Now implement this strategy on 1) the ``sample filtering`` tab of the `Data filtering page` and 2) the `Data normalization` page.
 ``>> Proceed`` again to the ``Rarefaction curve``.

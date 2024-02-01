@@ -22,10 +22,10 @@ copyright = '2022, Evelien Jongepier'
 author = 'Evelien Jongepier and Anna Heintz-Buschart'
 
 # The short X.Y version
-version = '0.4.0'
+version = '0.5.0'
 
 # The full version, including alpha/beta/rc tags
-release = '2023.02'
+release = '2024.02'
 
 
 # -- General configuration ---------------------------------------------------
